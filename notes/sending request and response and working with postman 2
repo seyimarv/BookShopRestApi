@@ -1,0 +1,18 @@
+res.render() wpnt be called anymore because rest api only deals with data
+instead we would return a JSON response. using res.json().
+you also have to set the status code and make sure you are clear about it. note: 200 is the default.
+the client now has to render the user interface based on the response.
+
+it is therefore important send the right status code.
+
+Postman: 
+To test data used in rest api.(it is an api development tool)
+Go to their website and download postman.
+
+Open postman
+
+Enter the url where your node server runs on e.g if port is 8080, and you want to go to /feed/posts enter http://localhost:8080/feed/posts. then you can choose your http method
+if Post choose raw, then in the dropdown choose json.
+write the data, then click send to get back the response.
+
+With postman you can easily test ur api endpoints

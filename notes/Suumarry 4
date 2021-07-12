@@ -1,0 +1,10 @@
+Rest Api are all about Data, no UI logic is exchanged. REST APIS are normal Node servers which expose diferent endpoints(Http method + path)
+for clients to send requests to.
+
+JSON is the common Data format that is used both for requests and responses.
+REST APIS are decoupled from the clients that use them.
+
+
+Requests and Resonses:
+attach data in JSON format and let the other end know by setting the "Content-Type" header.
+Cors errors occur when using an API that does not set CORS headers.

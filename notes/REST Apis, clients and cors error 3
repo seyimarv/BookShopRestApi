@@ -1,0 +1,6 @@
+we can simulate a frontend code using code pen.
+
+Cors is Cross Origin Resource Sharing
+
+if client and server run on different domains there will be issues.(a Cors Error)
+it can be overwritten by solving it on the server. by setting an header in App.js

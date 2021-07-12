@@ -1,0 +1,20 @@
+create a user model
+
+setUp the route and controllers for handling the user logic,
+
+setup validation using express-validator.
+
+Make sure you encrypt password when creating the signup controller. to hash password use bcryptjs, run npm install --save bcryptjs.
+
+How authentication works in the Rest APi;
+there are no sessions, so restful Apis are stateless i.e they dont care about the client. so every request should be stand alone.
+we return a token to the client generated on the server and hold information that can only be validated by the server
+(the token will is then stored on the server i.e the browser. and the client can then attach the token to every request it sends to the server.
+the token can only be validated by the server that created the token(it cant be faked)
+
+The token contains JSON data and a signature, which in turn gives us a JSON web Token. this token is then return to the client
+
+To start with generating JSON web token install a package i.e npm install --save jsonwebtoken
+to look into your web token you can go jwt.io.
+
+You have to attach the token to request that need authentication

@@ -1,0 +1,18 @@
+run npm init
+add .gitignore to ignore node_modules file,
+run npm install --save express, 
+run npm install --save-dev nodemon(so you dont have to run development server again and aagin)
+Go to package.json and add a "start" script in the scripts session and execute nodemon app.js to start app.js with nodemon. as in "start": "nodemon app.js"
+Go to app.js and setup node js server.
+run npm install --save body-parser(to be able to parse incoming request).
+
+Create your routed folder and add your routes.
+
+create your controllers folder.
+
+
+res.render() wont be called anymore because rest api only deals with data.
+
+
+note: there should be different domains for frontend and backend, so therefore we need the CORS headers.
+

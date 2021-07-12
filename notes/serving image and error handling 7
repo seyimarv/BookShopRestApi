@@ -1,0 +1,3 @@
+setup static serving of images folder in app.js
+
+setup the error handlig middleware function in app.js

@@ -1,0 +1,6 @@
+should be added because users can easily trick the frontend.
+to use this, run npm install --save express-validator
+
+then go to the route and add the validation logic.
+
+server-side logiv should be same as client-side logic

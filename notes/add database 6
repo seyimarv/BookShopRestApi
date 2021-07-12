@@ -1,0 +1,6 @@
+to add mongoDb and mongoose.. run npm install --save mongoose
+
+Go to app.js and require mongoose.
+then establish a connection using mongoose.connect.
+
+create the models

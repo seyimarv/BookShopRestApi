@@ -1,0 +1,4 @@
+you use a special body-parser.i.e multer. install with npm install --save multer.
+import multer into the app.js file
+
+setup fileStorage, and fileFilter;
