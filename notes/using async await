@@ -1,0 +1,10 @@
+async await:
+allows you to write asynchrous requests in a synchronous way. (only by the way it looks, not by the way it behaves).
+
+to handle error using async await you can use try and catch block(usually used for synchrounous code). 
+
+Top-level await:
+you can also use await in a top level i.e not in a function
+
+
+summarry: Mongoose does not return promise but uses a promise-like object. 

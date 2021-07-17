@@ -18,3 +18,9 @@ To start with generating JSON web token install a package i.e npm install --save
 to look into your web token you can go jwt.io.
 
 You have to attach the token to request that need authentication
+
+Summary:
+Due to no sessions being used, authentication works differently
+each request needs to be able to send some data that proves the request is authenticated
+JSON web Tokens("jwt") are a common way of storing authentication information on the client and providing authentication status
+Jwt are signed by the server abd can only be validated by the server

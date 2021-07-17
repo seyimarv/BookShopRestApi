@@ -9,7 +9,8 @@ const mongoose = require('mongoose') //importing mongoose
 const multer = require('multer'); //for file storage
 
 const feedRoutes = require('./routes/feed')  //needed to register the route
-const authRoutes = require('./routes/auth')  //needed to register the route
+const authRoutes = require('./routes/auth');  //needed to register the route
+
 
 const app = express(); //create the express app.
 
@@ -57,8 +58,12 @@ app.use((error, req, next) => {
 
 mongoose.connect('mongodb+srv://Marvelous:Tomilayo1@cluster0.yopfs.mongodb.net/messages')
 .then(result => {
-    console.log('connected')
-    app.listen(8080); 
+    const server = app.listen(8080)
+    const io = require('./socket').init(server
+    ); //setting up socket.io conection
+    io.on('connection', socket => {
+        console.log('Client connected')
+    });
 }).catch(err => {
     console.log(err)
 })//establish a mongoose connection

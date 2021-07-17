@@ -1,0 +1,9 @@
+allows us to build real-time web-services.  we can use a library(socket.io).
+
+to use, it has to be added on both the frontend and the backend. to install run npm install --save socket.io
+
+go to app.js to setup the conection
+
+Also run npm install --save socket.io -client in the frontend code, so that you can connect the server and the client 
+
+socket.io isnt the only library you can use. 

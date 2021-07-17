@@ -8,3 +8,5 @@ REST APIS are decoupled from the clients that use them.
 Requests and Resonses:
 attach data in JSON format and let the other end know by setting the "Content-Type" header.
 Cors errors occur when using an API that does not set CORS headers.
+
+The Rest Api does not care about the client, requests are handled in isolation => No sessions
